@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooted in Rajasthan</title>
+  <link rel="stylesheet" href="rj.css">
+
+
+  <!-- <link  href="review.html"> -->
+</head>
+
+<body>
+
+
+  <header>
+
+
+    <div class="logo-container">
+      <a href="rj.html">
+        <img src="pic/logo.jpeg" alt="Rajasthan Logo" class="logo" />
+      </a>
+      <div class="header-text">
+        <h1>Rooted in Rajasthan</h1>
+        <p>Culture, cuisine, craft, and soul</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+
+    <a href="rj.html">Home</a>
+    <a href="#rajasthan-map">Map</a>
+    <a href="#hotels">Hotels</a>
+    <a href="festival.html">Festivals</a>
+    <a href="food.html">Food</a>
+    <a href="folklore.html">Folklore</a>
+    <a href="culture.html">Culture </a>
+    <a href="rate.html">Rate Us</a>
+    <a href="about.html">About Us</a>
+    <a href="#contact">Contact Us</a>
+
+  </nav>
+
+  <div class="hero">
+    <h1><span id="typed-city"></span></h1>
+  </div>
+
+  <div class="container">
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all" type="button">All</button>
+      <button class="filter-btn" data-filter="jaipur" type="button">Jaipur</button>
+      <button class="filter-btn" data-filter="udaipur" type="button">Udaipur</button>
+      <button class="filter-btn" data-filter="jaisalmer" type="button">Jaisalmer</button>
+      <button class="filter-btn" data-filter="jodhpur" type="button">Jodhpur</button>
+    </div>
+
+    <!-- Jaipur -->
+    <section id="jaipur" class="place" data-city="jaipur">
+      <img src="pic/1k64ni15k8j71.jpg" alt="Amber Fort, Jaipur">
+      <div class="place-content">
+        <h2>Jaipur - The Pink City</h2>
+        <p>Jaipur is known for its rich history and pink-hued buildings like Hawa Mahal and Amber Fort.</p>
+        <button class="learn-more" data-place="jaipur">Learn More</button>
+      </div>
+    </section>
+
+    <!-- Udaipur -->
+    <section id="udaipur" class="place" data-city="udaipur">
+      <img src="pic/download.jpeg" alt="City Palace, Udaipur">
+      <div class="place-content">
+        <h2>Udaipur - The City of Lakes</h2>
+        <p>Udaipur is famous for its stunning lakes, palaces, and romantic vibes.</p>
+        <button class="learn-more" data-place="udaipur">Learn More</button>
+      </div>
+    </section>
+
+    <!-- Jaisalmer -->
+    <section id="jaisalmer" class="place" data-city="jaisalmer">
+      <img src="pic/15_IND_20Jaisalmer_JPEG_Hero_IND_20Jaisalmer.avif" alt="Jaisalmer Fort">
+      <div class="place-content">
+        <h2>Jaisalmer - The Golden City</h2>
+        <p>Located in the Thar Desert, Jaisalmer is known for golden forts and desert experiences.</p>
+        <button class="learn-more" data-place="jaisalmer">Learn More</button>
+      </div>
+    </section>
+
+    <!-- Jodhpur -->
+    <section id="jodhpur" class="place" data-city="jodhpur">
+      <img src="pic/download (1).jpeg" alt="Mehrangarh Fort, Jodhpur">
+      <div class="place-content">
+        <h2>Jodhpur - The Blue City</h2>
+        <p>Jodhpur features blue houses and the magnificent Mehrangarh Fort.</p>
+        <button class="learn-more" data-place="jodhpur">Learn More</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- End of .container, now start photo gallery section -->
+
+  <section id="photo-gallery">
+    <div class="gallery-card">
+      <h2><span style="color:#e67e22;">📸 Rajasthan Photo Gallery</span></h2>
+      <div class="gallery-grid animated-gallery">
+        <div class="para">
+          <img src="pic/rayta hill.jpeg" alt="Rayta Hills, Udaipur" onclick="openLightbox(this)">
+          <p>
+            Rayta Hills, also known as Bahubali Hills, is a popular spot near Udaipur known for its scenic views and
+            Instagrammable locations. </p>
+        </div>
+        <div class="para">
+          <img src="pic/hawa mahal.jpeg" alt="Hawa Mahal" onclick="openLightbox(this)">
+          <p>
+            Hawa Mahal, also known as the Palace of Winds, is a stunning architectural marvel in Jaipur. Its unique
+            façade features 953 small windows, allowing cool air to circulate and keeping the palace comfortable in the
+            hot desert climate.
+          </p>
+        </div>
+        <div class="para">
+          <img src="pic/sanwaliya ji.jpeg" alt="Sanwaliya Ji Temple" onclick="openLightbox(this)">
+          <p>
+            Sanwaliya Ji Temple is a famous temple dedicated to Lord Krishna, located near Chittorgarh. It is known for
+            its beautiful architecture and serene surroundings.
+          </p>
+        </div>
+        <div class="para">
+          <img src="pic/pushakr.jpeg" alt="Pushkar" onclick="openLightbox(this)">
+          <p>
+            Pushkar is a city in Rajasthan, India, known for its sacred Pushkar Lake and the annual Pushkar Camel Fair.
+          </p>
+        </div>
+        <div class="para">
+          <img src="pic/chittor.jpeg" alt="Chittorgarh Fort" onclick="openLightbox(this)">
+          <p>
+
+            Chittorgarh Fort is one of the largest forts in India, known for its massive structure and historical
+            significance.
+          </p>
+        </div>
+        <div class="para">
+          <img src="pic/karnimata.jpeg" alt="Karni Mata Temple" onclick="openLightbox(this)">
+          <p>
+            Karni Mata Temple is a famous temple dedicated to the Hindu goddess Karni Mata, located in Deshnok, near
+            Bikaner. It is known for its unique architecture and the thousands of rats that are revered and protected
+            within the temple premises.
+          </p>
+        </div>
+        <div class="para">
+          <img src="pic/ranthambore.jpeg" alt="Ranthambore National Park" onclick="openLightbox(this)">
+          <p>
+            Ranthambore National Park is one of the largest national parks in India, known for its Bengal tiger
+            population and diverse wildlife.
+          </p>
+        </div>
+        <div class="para">
+          <img src="pic/kumbhalgarh.jpeg" alt="Kumbhalgarh Fort" onclick="openLightbox(this)">
+          <p>
+            Kumbhalgarh Fort is a UNESCO World Heritage Site and is famous for its massive walls, which are the
+            second-longest in the world after the Great Wall of China.
+          </p>
+        </div>
+        <div class="para">
+          <img src="pic/eklingji.jpeg" alt="Eklingji Temple" onclick="openLightbox(this)">
+          <p>
+            Eklingji Temple is a complex of temples dedicated to Lord Shiva, located near Udaipur. It is known for its
+            stunning architecture and serene surroundings.
+          </p>
+        </div>
+        <div class="para">
+          <img src="pic/jawai.jpeg" alt="Jawai Safari" onclick="openLightbox(this)">
+          <p>
+            Jawai Safari is a unique wildlife experience in Rajasthan, offering sightings of leopards and other wildlife
+            in their natural habitat.
+          </p>
+        </div>
+        <div class="para">
+          <img src="pic/jalmahal.jpeg" alt="Jal Mahal" onclick="openLightbox(this)">
+          <p>
+            Jal Mahal is a beautiful palace located in the middle of Man Sagar Lake in Jaipur. It is known for its
+            stunning architecture and picturesque surroundings.
+          </p>
+        </div>
+        <div class="para">
+          <img src="pic/shreenathji.jpeg" alt="Shreenathji Temple" onclick="openLightbox(this)">
+          <p>
+            Shreenathji Temple is a famous temple dedicated to Lord Krishna, located in Nathdwara, Rajasthan. It is
+            known for its exquisite architecture and the idol of Lord Krishna, which is believed to be self-manifested.
+          </p>
+        </div>
+
+
+
+
+
+        <!-- Add more as needed -->
+      </div>
+      <!-- Lightbox (container-bound) -->
+      <div id="lightbox" class="lightbox animated-lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+          <span class="close-btn" onclick="closeLightbox()">×</span>
+          <img id="lightbox-img" src="" alt="">
+          <div id="lightbox-caption"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+  <section id="planner" class="fade-in-on-scroll">
+    <h2>🧭 Plan Your Rajasthan Trip</h2>
+    <p>Choose how many days you have — we’ll suggest a route!</p>
+    <select id="daySelect">
+      <option value="">Select Days</option>
+      <option value="3">3 Days</option>
+      <option value="5">5 Days</option>
+      <option value="7">7 Days</option>
+    </select>
+    <button onclick="generateItinerary()">Show Plan</button>
+
+    <div id="itineraryResult" class="itinerary-box"></div>
+  </section>
+
+  <section id="hotels">
+    <h2>Popular Hotels & Packages</h2>
+
+    <!-- Filter Buttons -->
+    <div class="hotel-filters">
+      <button class="hotel-filter active" data-city="all" type="button">All</button>
+      <button class="hotel-filter" data-city="jaipur" type="button">Jaipur</button>
+      <button class="hotel-filter" data-city="udaipur" type="button">Udaipur</button>
+      <button class="hotel-filter" data-city="jodhpur" type="button">Jodhpur</button>
+    </div>
+
+    <!-- Hotel Cards -->
+    <div class="hotel-list">
+      <div class="hotel-card" data-city="jaipur" onclick="openModal('hotel1')">
+        <img src="pic/rambagh.jpeg" alt="Rambagh Palace, Jaipur">
+        <h3>Rambagh Palace</h3>
+        <p>Luxury stay in Jaipur</p>
+      </div>
+      <div class="hotel-card" data-city="udaipur" onclick="openModal('hotel2')">
+        <img src="pic/taj.jpeg" alt="Taj Lake Palace, Udaipur">
+        <h3>Taj Lake Palace</h3>
+        <p>Lakefront heritage in Udaipur</p>
+      </div>
+      <div class="hotel-card" data-city="jodhpur" onclick="openModal('hotel3')">
+        <img src="pic/umaid.jpeg" alt="Umaid Bhawan Palace, Jodhpur">
+        <h3>Umaid Bhawan Palace</h3>
+        <p>Regal luxury in Jodhpur</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="hotelModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+
+
+  <section id="rajasthan-map">
+    <h2>🗺️ Interactive Rajasthan Map</h2>
+
+    <!-- City Filter Buttons -->
+    <div class="city-filters">
+      <button onclick="showCityInfo('Jaipur')">Jaipur</button>
+      <button onclick="showCityInfo('Jodhpur')">Jodhpur</button>
+      <button onclick="showCityInfo('Udaipur')">Udaipur</button>
+      <button onclick="showCityInfo('Bikaner')">Bikaner</button>
+      <button onclick="showCityInfo('Jaisalmer')">Jaisalmer</button>
+    </div>
+
+    <!-- SVG Map Image -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=1aoKAfhyvKB5HX9nWUsXWt-_DrTcVbJ0&ll=24.8876631560532%2C74.64459150000002&z=15"
+        width="90%" height="450" style="border:0; border-radius:12px;" allowfullscreen></iframe>
+    </div>
+
+    <!-- City Info Display -->
+    <div class="map-info-box" id="map-info">
+      <strong>Click a city or use the buttons above to explore.</strong>
+    </div>
+
+    <!-- Embedded Video -->
+    <div id="city-video" class="city-video"></div>
+  </section>
+
+  <!-- route recommender -->
+  <section id="route-recommender">
+    <h2>🧭 Mini Route Recommender</h2>
+    <p>What kind of experience are you looking for?</p>
+    <div class="route-btn-group">
+      <button class="route-btn" data-theme="heritage" onclick="recommendRoute('heritage', this)">🏰 Heritage &
+        Forts</button>
+      <button class="route-btn" data-theme="desert" onclick="recommendRoute('desert', this)">🏜️ Desert
+        Adventure</button>
+      <button class="route-btn" data-theme="romantic" onclick="recommendRoute('romantic', this)">❤️ Romantic
+        Escape</button>
+      <button class="route-btn" data-theme="spiritual" onclick="recommendRoute('spiritual', this)">🕉️ Spiritual
+        Retreat</button>
+      <button class="route-btn" data-theme="wildlife" onclick="recommendRoute('wildlife', this)">🦌 Nature &
+        Wildlife</button>
+    </div>
+    <div id="route-result" class="suggestion-card fade-in-on-select"></div>
+  </section>
+
+
+  <!-- cost estimator -->
+  <section id="cost-estimator" style="text-align:center;max-width:600px;margin:2rem auto;">
+    <div class="cost-card">
+      <h2 style="color:#e67e22; margin-bottom:1.2rem;">🧾 Rajasthan Trip Cost Estimator</h2>
+      <form class="cost-form" onsubmit="calculateCost(event)">
+        <label class="cost-label">Choose Cities <span style="font-size:0.9em;color:#c0392b;">(hold Ctrl to select
+            multiple)</span>:</label><br>
+        <select id="cities" multiple size="4" required class="cost-select">
+          <option value="Jaipur">Jaipur</option>
+          <option value="Udaipur">Udaipur</option>
+          <option value="Jodhpur">Jodhpur</option>
+          <option value="Jaisalmer">Jaisalmer</option>
+        </select>
+
+        <label class="cost-label">Nights per City:</label>
+        <input type="number" id="nights" min="1" value="2" class="cost-input" />
+
+        <label class="cost-label">Hotel Type:</label>
+        <select id="hotelType" class="cost-select">
+          <option value="budget">Budget</option>
+          <option value="standard">Standard</option>
+          <option value="luxury">Luxury</option>
+        </select>
+
+        <button class="cost-btn enhanced-cost-btn" type="submit">💰 Estimate Cost</button>
+      </form>
+
+      <div id="cost-result" class="suggestion-card fade-in-on-select"></div>
+    </div>
+  </section>
+
+
+
+  <section id="contact">
+    <div class="contact-card">
+      <h2 style="color:#e67e22; margin-bottom:1.2rem;">Contact Us</h2>
+      <form id="contact-form" class="contact-form-enhanced">
+        <input type="text" name="name" placeholder="Your Name" required class="contact-input" />
+        <input type="email" name="email" placeholder="Your Email" required class="contact-input" />
+        <textarea name="message" placeholder="Your Message" rows="5" required class="contact-input"></textarea>
+        <button type="submit" class="contact-btn-enhanced">📨 Send Message</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2025 Discover Rajasthan. All rights reserved.</p>
+  </footer>
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
+
+  <div id="chatbot">
+    <div class="chat-header">🤖 Travel Guide Assistant</div>
+    <div class="chat-body" id="chat-body"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Ask something..." />
+      <button onclick="handleChat()">Send</button>
+    </div>
+  </div>
+
+  <!-- Floating Button -->
+  <button id="chat-toggle" onclick="toggleChatbot()">💬</button>
+  <script src="rj.js"></script>
+
+  
+</body>
+
+</html>
