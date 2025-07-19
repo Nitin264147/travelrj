@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Back to Top button and script moved to end of body to avoid duplication -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fest+food+folklore.css">
+    <script src="rj.js"></script>
+    <title>Royal Food | Rooted in Rajasthan</title>
+</head>
+<body>
+    <!-- <div id="google_translate_element"></div> -->
+
+    <!-- <button id="toggleTheme"> 🌙 Dark Mode</button> -->
+    <header>
+
+
+        <div class="logo-container">
+            <a href="rj.html">
+                <img src="pic/logo.jpeg" alt="Rajasthan Logo" class="logo" />
+            </a>
+            <div class="header-text">
+                 <h1>Rooted in Rajasthan</h1>
+        <p>Culture, cuisine, craft, and soul</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+       
+        <a href="rj.html">Home</a>
+            <a href="rj.html#rajasthan-map">Map</a>
+            <a href="rj.html#hotels">Hotels</a>
+            <a href="festival.html">Festivals</a>
+            <a href="food.html">Food</a>
+            <a href="folklore.html">Folklore</a>
+            <a href="culture.html">Culture</a>
+            <a href="rate.html">Rate Us</a>
+            <a href="about.html">About Us</a>
+            <a href="rj.html#contact">Contact Us</a>
+    </nav>
+
+<section id="rajasthan-food">
+  <h2>🍽️ Flavors of Rajasthan</h2>
+  <div class="food-grid">
+    <div class="food-card" onclick="openFoodModal('dalbati')">
+      <img src="pic/dbc.jpeg" alt="Dal Baati Churma">
+      <h3>Dal Baati Churma</h3>
+    </div>
+    <div class="food-card" onclick="openFoodModal('gatte')">
+      <img src="pic/gatteks.jpeg" alt="Gatte ki Sabzi">
+      <h3>Gatte ki Sabzi</h3>
+    </div>
+    <div class="food-card" onclick="openFoodModal('kerSangri')">
+      <img src="pic/kersangri.jpeg" alt="Ker Sangri">
+      <h3>Ker Sangri</h3>
+    </div>
+    <div class="food-card" onclick="openFoodModal('laalmaas')">
+      <img src="pic/laalmaas.jpeg" alt="Laal Maas">
+      <h3>Laal Maas</h3>
+    </div>
+  </div>
+</section>
+
+<!-- Food Modal -->
+<div id="food-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <div id="food-modal-body"></div>
+  </div>
+</div>
+
+<section id="street-food-slider">
+  <h2>🌮 Street Food Delights</h2>
+  <div class="slider-container">
+    <div class="slide-track">
+      <div class="slide"><img src="pic/kachori.jpeg" alt="Pyaaz Kachori"><p>Pyaaz Kachori (Jodhpur)</p></div>
+      <div class="slide"><img src="pic/wada.jpeg" alt="Mirchi Vada"><p>Mirchi Vada (Jodhpur)</p></div>
+      <div class="slide"><img src="pic/mawa.jpeg" alt="Mawa Kachori"><p>Mawa Kachori (Jodhpur)</p></div>
+      <div class="slide"><img src="pic/besan chilla.jpeg" alt="Besan Chilla"><p>Besan Chilla (Jaipur)</p></div>
+      <!-- Duplicate slides for seamless looping -->
+      <div class="slide"><img src="pic/kachori.jpeg" alt="Pyaaz Kachori"><p>Pyaaz Kachori (Jodhpur)</p></div>
+      <div class="slide"><img src="pic/wada.jpeg" alt="Mirchi Vada"><p>Mirchi Vada (Jodhpur)</p></div>
+      <div class="slide"><img src="pic/mawa.jpeg" alt="Mawa Kachori"><p>Mawa Kachori (Jodhpur)</p></div>
+      <div class="slide"><img src="pic/besan chilla.jpeg" alt="Besan Chilla"><p>Besan Chilla (Jaipur)</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="food-map">
+  <h2>🗺️ Where to Eat What in Rajasthan</h2>
+  <img src="pic/khaana.jpeg" alt="Rajasthan Food Map" usemap="#foodmap" class="responsive-map">
+
+  <!-- <map name="foodmap">
+    <area shape="circle" coords="530,370,30" href="#" alt="Jodhpur" onclick="showDishInfo('jodhpur')">
+    <area shape="circle" coords="580,530,30" href="#" alt="Udaipur" onclick="showDishInfo('udaipur')">
+    <area shape="circle" coords="640,400,30" href="#" alt="Jaipur" onclick="showDishInfo('jaipur')">
+  </map> -->
+
+
+  <!-- Food Specialties Section -->
+
+<section id="food-specialties" class="food-specialties-card">
+  <h2 class="food-specialties-title">🍲 Rajasthan Food Specialties</h2>
+  <div class="food-specialties-btn-group">
+    <button class="food-btn" onclick="showDishInfo('jaipur')">Jaipur</button>
+    <button class="food-btn" onclick="showDishInfo('udaipur')">Udaipur</button>
+    <button class="food-btn" onclick="showDishInfo('jodhpur')">Jodhpur</button>
+  </div>
+  <div id="food-location-info" class="food-specialties-info"></div>
+</section>
+
+</section>
+
+
+
+     <footer>
+        <p>&copy; 2025 Discover Rajasthan. All rights reserved.</p>
+    </footer>
+
+    <button id="backToTop" title="Back to top">↑</button>
+   
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+
+    <div id="chatbot">
+  <div class="chat-header">🤖 Travel Guide Assistant</div>
+  <div class="chat-body" id="chat-body"></div>
+  <div class="chat-input">
+    <input type="text" id="user-input" placeholder="Ask something..." />
+    <button onclick="handleChat()">Send</button>
+  </div>
+</div>
+
+<!-- Floating Button -->
+<button id="chat-toggle" onclick="toggleChatbot()">💬</button>
+ 
+   
+
+ <script src="rj.js">
+    
+ </script>
+</body>
+</html>

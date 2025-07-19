@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="culture.css">
+    <script src="culture.js"></script>
+    <title>Royal Culture | Rooted in Rajasthan</title>
+</head>
+<body>
+     <header>
+
+
+        <div class="logo-container">
+            <a href="rj.html">
+                <img src="pic/logo.jpeg" alt="Rajasthan Logo" class="logo" />
+            </a>
+            <div class="header-text">
+                <h1>Rooted in Rajasthan</h1>
+                <p>Culture, cuisine, craft, and soul</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        
+            <a href="rj.html">Home</a>
+            <a href="#rajasthan-map">Map</a>
+            <a href="#hotels">Hotels</a>
+            <a href="festival.html">Festivals</a>
+            <a href="food.html">Food</a>
+            <a href="folklore.html">Folklore</a>
+            <a href="culture.html">Culture </a>
+            <a href="rate.html">Rate Us</a>
+            <a href="about.html">About Us</a>
+            <a href="#contact">Contact Us</a>
+        
+    </nav>
+
+
+
+<section class="culture-section">
+  <h1 class="section-title">Culture of Rajasthan</h1>
+
+  <!-- Traditional Clothes -->
+  <div class="culture-category">
+    <h2>Traditional Clothes</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="pic\pagari.jpeg" alt="Turban" data-image>
+        <div class="card-text">
+          <h3>Pagri (Turban)</h3>
+          <p>A symbol of honor and pride worn differently across regions.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pic\dress.jpeg" alt="Ghagra" data-image>
+        <div class="card-text">
+          <h3>Ghagra Choli</h3>
+          <p>Colorful, embroidered attire worn by Rajasthani women.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pic\angrakha.jpeg" alt="Angrakha" data-image>
+        <div class="card-text">
+          <h3>Angrakha</h3>
+          <p>A traditional upper garment for men, often worn during festivals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Folk Dance -->
+  <div class="culture-category">
+    <h2>Folk Dance</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="pic\ghoomer.jpeg" alt="Ghoomar" data-image>
+        <div class="card-text">
+          <h3>Ghoomar</h3>
+          <p>A graceful circular dance performed by women during festivals.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pic\kalbeliya.jpeg" alt="Kalbeliya" data-image>
+        <div class="card-text">
+          <h3>Kalbeliya</h3>
+          <p>A snake-like dance performed by the Kalbeliya tribe of Rajasthan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Folk Music -->
+  <div class="culture-category">
+    <h2>Folk Music</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="pic\sarangi.jpeg" alt="Sarangi" data-image>
+        <div class="card-text">
+          <h3>Sarangi</h3>
+          <p>A soulful string instrument central to Rajasthani folk melodies.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pic\manginiyaar.jpeg" alt="Manganiyar" data-image>
+        <div class="card-text">
+          <h3>Manganiyars</h3>
+          <p>Folk musicians known for devotional and love ballads.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Art & Craft -->
+  <div class="culture-category">
+    <h2>Art & Craft</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="pic\bluepottery.jpeg" alt="Blue Pottery" data-image>
+        <div class="card-text">
+          <h3>Blue Pottery</h3>
+          <p>Glazed pottery known for its vibrant cobalt blue dye.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="pic\kathputli.jpeg" alt="Puppets" data-image>
+        <div class="card-text">
+          <h3>Kathputli</h3>
+          <p>Traditional hand-crafted puppets used in folk storytelling.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+    
+
+   
+    <footer>
+        <p>&copy; 2025 Discover Rajasthan. All rights reserved.</p>
+    </footer>
+    <button id="backToTop" title="Back to top">↑</button>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+
+    <div id="chatbot">
+  <div class="chat-header">🤖 Travel Guide Assistant</div>
+  <div class="chat-body" id="chat-body"></div>
+  <div class="chat-input">
+    <input type="text" id="user-input" placeholder="Ask something..." />
+    <button onclick="handleChat()">Send</button>
+  </div>
+</div>
+
+<!-- Floating Button -->
+<button id="chat-toggle" onclick="toggleChatbot()">💬</button>
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" src="" alt="Expanded">
+</div>
+
+
+</body>
+</html>

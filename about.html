@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="rev+about.css" />
+  <script src="rj.js"></script>
+  <title>About Us | Rooted in Rajasthan</title>
+</head>
+<body>
+    <!-- <div id="google_translate_element"></div> -->
+
+<!-- <button id="toggleTheme"> 🌙 Dark Mode</button> -->
+    <header>
+
+
+        <div class="logo-container">
+            <img src="pic/logo.jpeg" alt="Rajasthan Logo" class="logo" />
+            <div class="header-text">
+                 <h1>Rooted in Rajasthan</h1>
+        <p>Culture, cuisine, craft, and soul</p>
+            </div>
+        </div>
+    </header>
+
+  <nav>
+
+       <a href="rj.html">Home</a>
+            <a href="rj.html#rajasthan-map">Map</a>
+            <a href="rj.html#hotels">Hotels</a>
+            <a href="festival.html">Festivals</a>
+            <a href="food.html">Food</a>
+            <a href="folklore.html">Folklore</a>
+            <a href="culture.html">Culture</a>
+            <a href="rate.html">Rate Us</a>
+            <a href="about.html">About Us</a>
+            <a href="rj.html#contact">Contact Us</a>
+    </nav>
+
+  <!-- <header class="hero about-hero">
+    <h1>About Rajasthan Travel</h1>
+    <p>Your guide to the royal land of forts, culture, and desert wonders.</p>
+  </header> -->
+
+  <section class="about-section">
+    <h2>Who We Are</h2>
+    <p>
+      Rajasthan Travel is a passion-driven project aimed at showcasing the incredible beauty, heritage, and culture of Rajasthan. Whether you're planning a family trip, a solo adventure, or a cultural exploration — we're here to guide you through every city, fort, and fair.
+    </p>
+  </section>
+
+  <section class="about-section fade-in-on-scroll">
+    <h2>Why Rajasthan?</h2>
+    <ul>
+      <li>🏰 Historic forts & palaces in Jaipur, Jodhpur, Udaipur</li>
+      <li>🌵 Desert adventures in Jaisalmer and Bikaner</li>
+      <li>🎉 Colorful festivals like Pushkar Fair & Desert Festival</li>
+      <li>🍛 Rich food, folk dance, and traditional arts</li>
+    </ul>
+  </section>
+
+  <section class="about-section team">
+    <h2>Meet the Team</h2>
+    <div class="team-cards">
+      <div class="team-member">
+        <img src="pic/nitin.png" alt="Founder" />
+        <h4>Nitin</h4>
+        <p>Founder & Explorer</p>
+      </div>
+      <div class="team-member">
+        <img src="pic/manan.png" alt="Guide" />
+        <h4>Manan</h4>
+        <p>Local Culture Expert</p>
+      </div>
+    </div>
+  </section>
+
+<section class="counter-section">
+  <h2>Our Journey So Far</h2>
+  <div class="counters">
+    <div class="counter-box">
+      <span class="counter" data-target="1500">200+</span>
+      <p>Happy Travelers</p>
+    </div>
+    <div class="counter-box">
+      <span class="counter" data-target="28">50+</span>
+      <p>Destinations Covered</p>
+    </div>
+    <div class="counter-box">
+      <span class="counter" data-target="12">30+</span>
+      <p>Local Guides</p>
+    </div>
+  </div>
+</section>
+
+<section class="accordion-section">
+  <h2>Our Vision</h2>
+  <div class="accordion">
+    <div class="accordion-item">
+      <button onclick="toggleAccordion(this)">Why build this website?</button>
+      <div class="panel">
+        <p>We wanted to make Rajasthan tourism easier for young travelers by combining visuals, facts, and easy booking tools in one place.</p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <button onclick="toggleAccordion(this)">How are hotels selected?</button>
+      <div class="panel">
+        <p>We manually pick top-rated hotels and heritage stays based on quality, service, and local experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer>
+    <p>Made with ❤️ in Rajasthan. © 2025 Rajasthan Travel</p>
+  </footer>
+  <!-- Back to Top button and script moved to end of body to avoid duplication -->
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+
+    <div id="chatbot">
+  <div class="chat-header">🤖 Travel Guide Assistant</div>
+  <div class="chat-body" id="chat-body"></div>
+  <div class="chat-input">
+    <input type="text" id="user-input" placeholder="Ask something..." />
+    <button onclick="handleChat()">Send</button>
+  </div>
+</div>
+
+
+<!-- Floating Button -->
+<button id="chat-toggle" onclick="toggleChatbot()">💬</button>
+<script src="rj.js"></script>
+<body>
+</html>

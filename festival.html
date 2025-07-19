@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fest+food+folklore.css">
+  <script src="rj.js"></script>
+  <title>Festivals & Culture | Rooted in Rajasthan</title>
+</head>
+
+<body>
+  <!-- <div id="google_translate_element"></div> -->
+
+  <!-- <button id="toggleTheme"> 🌙 Dark Mode</button> -->
+
+
+  <header>
+
+
+    <div class="logo-container">
+      <a href="rj.html">
+        <img src="pic/logo.jpeg" alt="Rajasthan Logo" class="logo" />
+      </a>
+      <div class="header-text">
+         <h1>Rooted in Rajasthan</h1>
+        <p>Culture, cuisine, craft, and soul</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="rj.html">Home</a>
+    <a href="rj.html#rajasthan-map">Map</a>
+    <a href="rj.html#hotels">Hotels</a>
+    <a href="festival.html">Festivals</a>
+    <a href="food.html">Food</a>
+    <a href="folklore.html">Folklore</a>
+    <a href="culture.html">Culture</a>
+    <a href="rate.html">Rate Us</a>
+    <a href="about.html">About Us</a>
+    <a href="rj.html#contact">Contact Us</a>
+  </nav>
+
+
+  <!-- Festival Calendar Section -->
+  <section id="festival-calendar">
+    <h2>🎉 Rajasthan Festival Calendar</h2>
+    <div class="festival-carousel">
+      <div class="festival-card" onclick="openFestivalModal('pushkar')">
+        <h3>Pushkar Mela</h3>
+        <p>🗓️ Nov • Pushkar</p>
+        <p>Click for more ➜</p>
+      </div>
+      <div class="festival-card" onclick="openFestivalModal('desert')">
+        <h3>Desert Festival</h3>
+        <p>🗓️ Feb • Jaisalmer</p>
+        <p>Click for more ➜</p>
+      </div>
+      <div class="festival-card" onclick="openFestivalModal('gangaur')">
+        <h3>Gangaur</h3>
+        <p>🗓️ Mar-Apr • Jaipur/Udaipur</p>
+        <p>Click for more ➜</p>
+      </div>
+      <div class="festival-card" onclick="openFestivalModal('teej')">
+        <h3>Teej Festival</h3>
+        <p>🗓️ Aug • Jaipur</p>
+        <p>Click for more ➜</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="seasonal-suggestions" style="text-align:center;max-width:600px;margin:2rem auto;">
+    <div class="seasonal-card">
+      <h2 style="color:#e67e22; margin-bottom:1.2rem;">🌤️ Seasonal Travel Picks</h2>
+      <p style="color:#c0392b;">Select a season to explore the best destinations in Rajasthan:</p>
+      <select onchange="showSuggestions(this.value)" class="season-select">
+        <option value="">-- Choose a Season --</option>
+        <option value="winter">❄️ Winter (Nov–Feb)</option>
+        <option value="summer">☀️ Summer (Apr–June)</option>
+        <option value="monsoon">🌧️ Monsoon (July–Sept)</option>
+      </select>
+      <div id="suggestion-box" class="suggestion-card"></div>
+    </div>
+  </section>
+
+
+  <!-- Local Phrasebook -->
+  <section id="phrasebook">
+    <h2>🗣️ Rajasthani Phrasebook</h2>
+    <button class="toggle-phrases" onclick="togglePhrases()">🗂️ Show/Hide Phrases</button>
+    <ul id="phrases-list" class="phrases-hidden">
+      <li><strong>Khamma Ghani</strong> – Hello <button onclick="speak('Khamma Ghani')">🔊</button></li>
+      <li><strong>Thari su khabar?</strong> – How are you? <button onclick="speak('Thari su khabar')">🔊</button></li>
+      <li><strong>Kitna paisa?</strong> – How much? <button onclick="speak('Kitna paisa')">🔊</button></li>
+      <li><strong>Mane Rajasthan ghoomno hai</strong> – I want to travel Rajasthan <button
+          onclick="speak('Mane Rajasthan ghoomno hai')">🔊</button></li>
+      <li><strong>Dhanyavaad</strong> – Thank you <button onclick="speak('Dhanyavaad')">🔊</button></li>
+    </ul>
+  </section>
+
+  <!-- Modal -->
+  <div id="festival-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">×</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2025 Discover Rajasthan. All rights reserved.</p>
+  </footer>
+
+  <button id="backToTop" title="Back to top">↑</button>
+
+
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
+
+  <div id="chatbot">
+    <div class="chat-header">🤖 Travel Guide Assistant</div>
+    <div class="chat-body" id="chat-body"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Ask something..." />
+      <button onclick="handleChat()">Send</button>
+    </div>
+  </div>
+
+  <!-- Floating Button -->
+  <button id="chat-toggle" onclick="toggleChatbot()">💬</button>
+
+
+
+
+
+
+</body>
+
+</html>

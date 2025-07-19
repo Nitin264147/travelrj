@@ -1,0 +1,1449 @@
+/* === Contact Card & Button Enhancement === */
+.contact-card {
+  background: linear-gradient(120deg, #fff3e0 80%, #ffe0b2 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(230,126,34,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2.5rem auto 2rem auto;
+  max-width: 600px;
+  text-align: center;
+  border: 2px solid #e67e22;
+}
+.contact-form-enhanced {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+}
+.contact-input {
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  border: 1.5px solid #e67e22;
+  font-size: 1.08rem;
+  background: #fffbe7;
+  color: #c0392b;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  max-width: 350px;
+  transition: border 0.2s;
+}
+.contact-input:focus {
+  border: 2px solid #e67e22;
+  outline: none;
+}
+.contact-btn-enhanced {
+  background: linear-gradient(90deg, #e67e22 0%, #c0392b 100%);
+  color: #fffbe7;
+  border: none;
+  border-radius: 30px;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px #e67e2233;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  letter-spacing: 0.5px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.contact-btn-enhanced:hover {
+  background: linear-gradient(90deg, #c0392b 0%, #e67e22 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px #e67e2233;
+}
+/* === Cost Estimator Card & Button Enhancement === */
+.cost-card {
+  background: linear-gradient(120deg, #fff3e0 80%, #ffe0b2 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(230,126,34,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2.5rem auto 2rem auto;
+  max-width: 600px;
+  text-align: center;
+  border: 2px solid #e67e22;
+}
+.cost-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+}
+.cost-label {
+  font-weight: 600;
+  color: #c0392b;
+  margin-bottom: 0.2rem;
+}
+.cost-select, .cost-input {
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  border: 1.5px solid #e67e22;
+  font-size: 1.08rem;
+  background: #fffbe7;
+  color: #c0392b;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  max-width: 350px;
+  transition: border 0.2s;
+}
+.cost-select:focus, .cost-input:focus {
+  border: 2px solid #e67e22;
+  outline: none;
+}
+.enhanced-cost-btn {
+  background: linear-gradient(90deg, #e67e22 0%, #c0392b 100%);
+  color: #fffbe7;
+  border: none;
+  border-radius: 30px;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 2px 8px #e67e2233;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  letter-spacing: 0.5px;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.enhanced-cost-btn:hover {
+  background: linear-gradient(90deg, #c0392b 0%, #e67e22 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px #e67e2233;
+}
+/* Hide gallery captions by default, only show in lightbox */
+.gallery-grid .para p {
+  display: none;
+}
+/* Prevent body scroll when lightbox is open */
+.lightbox-open {
+  overflow: hidden !important;
+  width: 100vw;
+  position: fixed;
+}
+/* Photo Gallery Card Styling */
+#photo-gallery {
+  background: #fffbe7;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0001;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  margin: 2.5rem auto 2rem auto;
+  max-width: 900px;
+  height: 1000px;
+  background-color: rgba(0,0,0,0.88);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+  border-radius: 0;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px #0008;
+  border: 4px solid #fffbe7;
+}
+.lightbox p {
+  color: #fffbe7;
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 8px #000a;
+}
+.lightbox .close-btn {
+  position: absolute;
+  top: 24px;
+  right: 40px;
+  color: #e67e22;
+  font-size: 2.5rem;
+  cursor: pointer;
+  background: #fffbe7;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Photo Gallery - Improved Layout & Animation */
+.gallery-card {
+  background: linear-gradient(120deg, #fff3e0 80%, #ffe0b2 100%);
+  border-radius: 22px;
+  box-shadow: 0 6px 32px rgba(230,126,34,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2.5rem auto 2rem auto;
+  max-width: 800px;
+  height: 900px;
+  overflow: visible;
+  position: relative;
+}
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  overflow-x: hidden;
+
+/* Container-bound Lightbox (gallery only) */
+.gallery-card .lightbox {
+  display: none;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.96);
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  flex-direction: column;
+  animation: lightboxIn 0.4s cubic-bezier(.4,2,.6,1);
+  overflow: auto;
+}
+.gallery-card .lightbox-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.gallery-card .lightbox img#lightbox-img {
+  max-width: 80%;
+  max-height: 60vh;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(230,126,34,0.18);
+  margin-bottom: 1.2rem;
+  animation: lightboxImgIn 0.5s cubic-bezier(.4,2,.6,1);
+}
+.gallery-card .lightbox #lightbox-caption {
+  color: #fff3e0;
+  font-size: 1.15rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px #0008;
+}
+
+.gallery-card .lightbox #lightbox-caption h1 {
+  color: #ffe0b2;
+  font-size: 2rem;
+  margin: 0.5rem 0 0.5rem 0;
+  text-shadow: 0 2px 8px #000a;
+  font-weight: bold;
+}
+.gallery-card .close-btn {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 2.2rem;
+  color: #fff3e0;
+  cursor: pointer;
+  z-index: 21;
+  transition: color 0.2s, transform 0.2s;
+  text-shadow: 0 2px 8px #0008;
+  background: none;
+  border: none;
+}
+.gallery-card .close-btn:hover {
+  color: #e67e22;
+  transform: scale(1.15) rotate(8deg);
+}
+
+  overflow: auto;
+ 
+}
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(230,126,34,0.18);
+  margin-bottom: 1.2rem;
+  animation: lightboxImgIn 0.5s cubic-bezier(.4,2,.6,1);
+}
+.lightbox p {
+  color: #fff3e0;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px #0008;
+}
+.close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2.5rem;
+  font-size: 2.7rem;
+  color: #fff3e0;
+  cursor: pointer;
+  z-index: 2100;
+  transition: color 0.2s, transform 0.2s;
+  text-shadow: 0 2px 8px #0008;
+}
+.close-btn:hover {
+  color: #e67e22;
+  transform: scale(1.15) rotate(8deg);
+}
+@keyframes lightboxIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes lightboxImgIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Prevent scroll when lightbox is open */
+body.lightbox-open {
+  overflow: hidden !important;
+  width: 100vw;
+  position: relative;
+}
+
+.suggestion-card.fade-in-on-select {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.suggestion-card.fade-in-on-select.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Route Recommender Styling */
+#route-recommender {
+  background: #fffbe7;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0001;
+  padding: 2.5rem 1.5rem 2rem 1.5rem;
+  margin: 2.5rem auto 2rem auto;
+  max-width: 600px;
+  text-align: center;
+  animation: fadeInUp 1s cubic-bezier(.23,1.01,.32,1) both;
+}
+
+.route-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.route-btn {
+  background: linear-gradient(90deg, #e74c3c 0%, #f9d423 100%);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.8rem 1.7rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px #e74c3c22;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  outline: none;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+.route-btn:hover, .route-btn.active {
+  background: linear-gradient(90deg, #f9d423 0%, #e74c3c 100%);
+  color: #fff;
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 6px 18px #e74c3c33;
+}
+
+.suggestion-card.fade-in-on-select {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.suggestion-card.fade-in-on-select.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+}
+
+header {
+
+  height: 100px;
+    background-color: #c0392b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.hero 
+{height: 100px;
+  width: 100%;
+      background-image: url('pic/backgroundrj.jpg'); /* Ensure the image path is correct */ 
+  background-size: cover;          /* makes image cover the full screen */
+      background-repeat: no-repeat;    /* prevents tiling */
+      background-position: center;     /* centers the image */
+}
+ 
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    background-color: #e74c3c;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #c0392b;
+}
+
+/* Hero Banner */
+.hero {
+    background: url('https://cdn.pixabay.com/photo/2021/02/03/15/39/rajasthan-5977903_1280.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000;
+}
+
+/* Main place card layout for Jaipur, Udaipur, Jaisalmer, Jodhpur */
+.container {
+  padding: 2rem 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.place {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: #fffbe7;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.5rem 1rem;
+  gap: 2rem;
+}
+
+.place img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.place-content {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.place h2 {
+  margin-top: 0;
+  color: #c0392b;
+}
+
+.place p {
+  font-size: 1.08rem;
+  color: #333;
+}
+
+.place .learn-more {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .place {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .place img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Sections */
+
+.story-container {
+  padding: 2rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.story {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: #fffbe7;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 1rem;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+}
+
+.story.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.story img.illustration {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.story .en, .story .hi {
+  flex: 1 1 300px;
+  min-width: 250px;
+  margin-bottom: 1rem;
+}
+
+.story h2 {
+  margin-top: 0;
+  color: #c0392b;
+}
+
+.story p {
+  font-size: 1.08rem;
+  color: #333;
+}
+
+.story audio {
+  margin-top: 0.5rem;
+}
+
+.learn-more {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #a93226;
+}
+
+.place.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    text-align: left;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #c0392b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .place {
+        flex-direction: column;
+    }
+}
+
+/* === Enhanced Carousel Container === */
+.carousel-container {
+  position: relative;
+  max-width: 60%;
+  margin: 3rem auto;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  background-color: #000;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 20px;
+  opacity: 0.95;
+  filter: brightness(0.95);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.02);
+  opacity: 1;
+  filter: brightness(1);
+}
+
+/* === Navigation Buttons === */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.6);
+  color: #111;
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.2s;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: #e74c3c;
+  color: white;
+  transform: scale(1.1);
+}
+
+.carousel-btn.prev { left: 20px; }
+.carousel-btn.next { right: 20px; }
+
+/* === Optional Gradient Overlay (for mood or text) === */
+.carousel-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.carousel-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 5;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.carousel-container:hover {
+  box-shadow: 0 16px 32px rgba(0,0,0,0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+
+
+/* === Back to Top Button === */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #c0392b;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background-color: #a93226;
+}
+
+/* === Parallax Hero === */
+.hero {
+  background: url('https://cdn.pixabay.com/photo/2021/02/03/15/39/rajasthan-5977903_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 300px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #000;
+}
+
+/* === Contact Form Feedback === */
+input:valid, textarea:valid {
+  border: 2px solid green;
+}
+
+input:invalid, textarea:invalid {
+  border: 2px solid red;
+}
+
+.filters {
+  text-align: center;
+  margin: 2rem auto 1rem;
+}
+
+.filter-btn {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background-color: #c0392b;
+}
+
+.place.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.place.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+#toggleTheme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  
+}
+
+body.dark {
+  background: #121212;
+  color: #f5f5f5;
+}
+body.dark header, body.dark footer {
+  background: #1c1c1c;
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  z-index: 1000;
+}
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Chatbot Container */
+#chatbot {
+  position: fixed;
+  bottom: 170px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  display: none;
+  z-index: 999;
+  flex-direction: column;
+}
+
+.chat-header {
+  background: #e74c3c;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chat-body {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.chat-body .message {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.message.user {
+  text-align: right;
+  color: #2c3e50;
+}
+
+.message.bot {
+  text-align: left;
+  color: #16a085;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.chat-input button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Floating Chat Button */
+#chat-toggle {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  font-size: 20px;
+  padding: 12px 14px;
+  border-radius: 50%;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+/* HOTEL SECTION */
+#hotels {
+  padding: 2rem;
+  background: #fdfdfd;
+  text-align: center;
+}
+
+.hotel-filters {
+  margin-bottom: 1rem;
+}
+.hotel-filter {
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border: none;
+  border-radius: 20px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+}
+.hotel-filter.active,
+.hotel-filter:hover {
+  background: #2980b9;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.hotel-card {
+  background: white;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.hotel-card:hover {
+  transform: translateY(-5px);
+}
+.hotel-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.hotel-card h3 {
+  margin: 0.5rem 0 0;
+  color: #333;  
+}
+.hotel-card p {
+  font-size: 14px;
+  color: #666;
+  padding-bottom: 1rem;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+.modal-content .close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* BOOKING FORM */
+.booking-form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.booking-form input,
+.booking-form button {
+  padding: 0.6rem;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.booking-form button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.booking-form button:hover {
+  background-color: #219150;
+}
+.whatsapp-book {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.whatsapp-book:hover {
+  background-color: #1ebe5d;
+}
+
+/* Photo Gallery */
+#photo-gallery {
+  padding: 2rem;
+  background: #fffbe7;
+  text-align: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  overflow: visible;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.lightbox p {
+  color: white;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.lightbox .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+/* about */
+/* Navbar Highlight */
+nav a.active {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+/* About Hero Section */
+.about-hero {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Amber_Fort%2C_Jaipur.jpg/1024px-Amber_Fort%2C_Jaipur.jpg') no-repeat center;
+  background-size: cover;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* About Content */
+.about-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+.about-section ul {
+  text-align: left;
+  display: inline-block;
+  margin-top: 1rem;
+  list-style: none;
+}
+.about-section ul li {
+  padding: 0.5rem 0;
+}
+
+/* Team Section */
+.team-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+.team-member {
+  max-width: 180px;
+}
+.team-member img {
+  width: 100%;
+  border-radius: 10px;
+}
+.team-member h4 {
+  margin: 0.5rem 0 0.2rem;
+}
+
+
+.counter-section {
+  background-color: #fdfdfd;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.counters {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.counter-box {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+.counter-box p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+
+
+.accordion-section {
+  padding: 2rem;
+  text-align: center;
+}
+.accordion button {
+  width: 100%;
+  text-align: left;
+  background: #f2f2f2;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+.accordion .panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #fafafa;
+  padding: 0 1rem;
+}
+.accordion .panel p {
+  padding: 1rem 0;
+}
+.accordion .active + .panel {
+  max-height: 200px;
+}
+
+
+#planner {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+}
+
+#planner select,
+#planner button {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#planner button {
+  background-color: #e67e22;
+  color: white;
+  cursor: pointer;
+}
+
+.itinerary-box {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-inline: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#rajasthan-map {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #fdfdfd;
+}
+
+.city-filters {
+  margin-bottom: 1rem;
+}
+
+.city-filters button {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  margin: 0.3rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.city-filters button:hover {
+  background-color: #cf711f;
+}
+
+.map-container {
+  position: relative;
+  max-width: 40%;
+  margin: auto;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+.map-info-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #e67e22;
+  max-width: 700px;
+  margin-inline: auto;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.city-video {
+  margin-top: 1rem;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.city-video iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  border: none;
+}
+
+
+
+/* #google_translate_element styles defined only once above. Removed duplicate. */
+/* Removed duplicate .modal, .modal-content, .close-btn definitions. Use the first occurrence for all modals. */
+
+
+#cost-estimator form {
+  margin-bottom: 1rem;
+}
+
+#cost-estimator select,
+#cost-estimator input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* route recommendor */
+#route-recommender {
+  background-color: #f3f9f9;
+  padding: 2rem;
+  text-align: center;
+}
+
+#route-recommender select {
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+#route-result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px dashed #2a9d8f;
+  border-radius: 10px;
+  max-width: 700px;
+  margin-inline: auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+/* Modal reuse from earlier */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#street-food-slider {
+  background: #fff7eb;
+  padding: 2rem;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  margin: 0 1rem;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+.slide img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+#food-map {
+  padding: 2rem;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.responsive-map {
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+
+
