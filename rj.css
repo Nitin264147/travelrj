@@ -1,3 +1,32 @@
+ .dark{ 
+margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #c0392b !important;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.light{
+background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.dark:hover, .light:hover {
+  background-color: #a93226 !important;
+  color: white;
+}
+
+
 /* === Contact Card & Button Enhancement === */
 .contact-card {
   background: linear-gradient(120deg, #fff3e0 80%, #ffe0b2 100%);
@@ -31,7 +60,7 @@
   border: 2px solid #e67e22;
   outline: none;
 }
-.contact-btn-enhanced {
+/* .contact-btn-enhanced {
   background: linear-gradient(90deg, #e67e22 0%, #c0392b 100%);
   color: #fffbe7;
   border: none;
@@ -51,7 +80,7 @@
   color: #fff;
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 6px 18px #e67e2233;
-}
+} */
 /* === Cost Estimator Card & Button Enhancement === */
 .cost-card {
   background: linear-gradient(120deg, #fff3e0 80%, #ffe0b2 100%);
@@ -90,7 +119,7 @@
   border: 2px solid #e67e22;
   outline: none;
 }
-.enhanced-cost-btn {
+/* .enhanced-cost-btn {
   background: linear-gradient(90deg, #e67e22 0%, #c0392b 100%);
   color: #fffbe7;
   border: none;
@@ -110,7 +139,7 @@
   color: #fff;
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 6px 18px #e67e2233;
-}
+} */
 /* Hide gallery captions by default, only show in lightbox */
 .gallery-grid .para p {
   display: none;
@@ -329,7 +358,7 @@ body.lightbox-open {
   margin: 1.5rem 0 2rem 0;
 }
 
-.route-btn {
+/* .route-btn {
   background: linear-gradient(90deg, #e74c3c 0%, #f9d423 100%);
   color: #fff;
   border: none;
@@ -344,13 +373,13 @@ body.lightbox-open {
   letter-spacing: 0.5px;
   position: relative;
   overflow: hidden;
-}
-.route-btn:hover, .route-btn.active {
+} */
+/* .route-btn:hover, .route-btn.active {
   background: linear-gradient(90deg, #f9d423 0%, #e74c3c 100%);
   color: #fff;
   transform: translateY(-3px) scale(1.06);
   box-shadow: 0 6px 18px #e74c3c33;
-}
+} */
 
 .suggestion-card.fade-in-on-select {
   opacity: 0;
@@ -922,10 +951,11 @@ body.dark header, body.dark footer {
   text-align: center;
 }
 
-.hotel-filters {
+ .hotel-filters {
   margin-bottom: 1rem;
 }
-.hotel-filter {
+
+/* .hotel-filter {
   padding: 0.5rem 1rem;
   margin: 0.3rem;
   border: none;
@@ -933,11 +963,11 @@ body.dark header, body.dark footer {
   background: #3498db;
   color: white;
   cursor: pointer;
-}
+} 
 .hotel-filter.active,
 .hotel-filter:hover {
   background: #2980b9;
-}
+} */
 
 .hotel-list {
   display: flex;
@@ -1260,7 +1290,7 @@ nav a.active {
   margin-bottom: 1rem;
 }
 
-.city-filters button {
+/* .city-filters button {
   background-color: #e67e22;
   color: white;
   border: none;
@@ -1273,7 +1303,7 @@ nav a.active {
 
 .city-filters button:hover {
   background-color: #cf711f;
-}
+} */
 
 .map-container {
   position: relative;
@@ -1444,6 +1474,11 @@ nav a.active {
   border-radius: 10px;
   margin-bottom: 1rem;
 }
+
+
+
+
+
 
 
 

@@ -1,3 +1,34 @@
+ .dark{ 
+margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #c0392b !important;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.light{
+background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  margin: 0.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.dark:hover, .light:hover {
+  background-color: #a93226 !important;
+  color: white;
+}
+
+
+
+
 /* === Review Card & Button Enhancement === */
 .review-card-theme {
   background: linear-gradient(120deg, #fff3e0 80%, #ffe0b2 100%);
@@ -31,7 +62,7 @@
   border: 2px solid #e67e22;
   outline: none;
 }
-.review-btn-enhanced {
+/* .review-btn-enhanced {
   background: linear-gradient(90deg, #e67e22 0%, #c0392b 100%);
   color: #fffbe7;
   border: none;
@@ -51,7 +82,7 @@
   color: #fff;
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 6px 18px #e67e2233;
-}
+} */
 .star-rating-enhanced {
   display: flex;
   gap: 0.3rem;
@@ -178,7 +209,7 @@ footer {
   border: 2px solid #e67e22;
   outline: none;
 }
-.contact-btn-enhanced {
+/* .contact-btn-enhanced {
   background: linear-gradient(90deg, #e67e22 0%, #c0392b 100%);
   color: #fffbe7;
   border: none;
@@ -198,7 +229,7 @@ footer {
   color: #fff;
   transform: translateY(-2px) scale(1.04);
   box-shadow: 0 6px 18px #e67e2233;
-}
+} */
 
 /* === Back to Top Button === */
 #backToTop {

@@ -686,9 +686,6 @@ function recommendRoute(theme, btn) {
   }
 }
 
-
-
-
 // food
 function openFoodModal(food) {
   const body = document.getElementById("food-modal-body");
@@ -778,6 +775,27 @@ function showDishInfo(city) {
 
   document.getElementById("food-location-info").innerHTML = info[city] || "Select a city to view food highlights.";
 }
+
+// Hotel filter functionality
+document.addEventListener('DOMContentLoaded', function () {
+  const filterButtons = document.querySelectorAll('.hotel-filter');
+  const hotelCards = document.querySelectorAll('.hotel-card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const city = this.getAttribute('data-city');
+      hotelCards.forEach(card => {
+        if (city === 'all' || card.getAttribute('data-city') === city) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
 
 
 

@@ -49,11 +49,11 @@
 
   <div class="container">
     <div class="filters">
-      <button class="filter-btn active" data-filter="all" type="button">All</button>
-      <button class="filter-btn" data-filter="jaipur" type="button">Jaipur</button>
-      <button class="filter-btn" data-filter="udaipur" type="button">Udaipur</button>
-      <button class="filter-btn" data-filter="jaisalmer" type="button">Jaisalmer</button>
-      <button class="filter-btn" data-filter="jodhpur" type="button">Jodhpur</button>
+      <button class="light filter-btn active"  data-filter="all" type="button">All</button>
+      <button class="light filter-btn" data-filter="jaipur" type="button">Jaipur</button>
+      <button class="light filter-btn" data-filter="udaipur" type="button">Udaipur</button>
+      <button class="light filter-btn" data-filter="jaisalmer" type="button">Jaisalmer</button>
+      <button class="light filter-btn" data-filter="jodhpur" type="button">Jodhpur</button>
     </div>
 
     <!-- Jaipur -->
@@ -62,7 +62,7 @@
       <div class="place-content">
         <h2>Jaipur - The Pink City</h2>
         <p>Jaipur is known for its rich history and pink-hued buildings like Hawa Mahal and Amber Fort.</p>
-        <button class="learn-more" data-place="jaipur">Learn More</button>
+        <button class="dark learn-more" data-place="jaipur">Learn More</button>
       </div>
     </section>
 
@@ -72,7 +72,7 @@
       <div class="place-content">
         <h2>Udaipur - The City of Lakes</h2>
         <p>Udaipur is famous for its stunning lakes, palaces, and romantic vibes.</p>
-        <button class="learn-more" data-place="udaipur">Learn More</button>
+        <button class="dark learn-more" data-place="udaipur">Learn More</button>
       </div>
     </section>
 
@@ -82,7 +82,7 @@
       <div class="place-content">
         <h2>Jaisalmer - The Golden City</h2>
         <p>Located in the Thar Desert, Jaisalmer is known for golden forts and desert experiences.</p>
-        <button class="learn-more" data-place="jaisalmer">Learn More</button>
+        <button class="dark learn-more" data-place="jaisalmer">Learn More</button>
       </div>
     </section>
 
@@ -92,7 +92,7 @@
       <div class="place-content">
         <h2>Jodhpur - The Blue City</h2>
         <p>Jodhpur features blue houses and the magnificent Mehrangarh Fort.</p>
-        <button class="learn-more" data-place="jodhpur">Learn More</button>
+        <button class="dark learn-more" data-place="jodhpur">Learn More</button>
       </div>
     </section>
   </div>
@@ -219,6 +219,8 @@
       <p id="modal-description"></p>
     </div>
   </div>
+
+
   <section id="planner" class="fade-in-on-scroll">
     <h2>🧭 Plan Your Rajasthan Trip</h2>
     <p>Choose how many days you have — we’ll suggest a route!</p>
@@ -228,7 +230,7 @@
       <option value="5">5 Days</option>
       <option value="7">7 Days</option>
     </select>
-    <button onclick="generateItinerary()">Show Plan</button>
+    <button class="dark" onclick="generateItinerary()">Show Plan</button>
 
     <div id="itineraryResult" class="itinerary-box"></div>
   </section>
@@ -238,10 +240,10 @@
 
     <!-- Filter Buttons -->
     <div class="hotel-filters">
-      <button class="hotel-filter active" data-city="all" type="button">All</button>
-      <button class="hotel-filter" data-city="jaipur" type="button">Jaipur</button>
-      <button class="hotel-filter" data-city="udaipur" type="button">Udaipur</button>
-      <button class="hotel-filter" data-city="jodhpur" type="button">Jodhpur</button>
+      <button class="light hotel-filter active"  data-city="all" type="button">All</button>
+      <button class="light hotel-filter" data-city="jaipur" type="button">Jaipur</button>
+      <button class="light hotel-filter" data-city="udaipur" type="button">Udaipur</button>
+      <button class="light hotel-filter" data-city="jodhpur" type="button">Jodhpur</button>
     </div>
 
     <!-- Hotel Cards -->
@@ -279,11 +281,11 @@
 
     <!-- City Filter Buttons -->
     <div class="city-filters">
-      <button onclick="showCityInfo('Jaipur')">Jaipur</button>
-      <button onclick="showCityInfo('Jodhpur')">Jodhpur</button>
-      <button onclick="showCityInfo('Udaipur')">Udaipur</button>
-      <button onclick="showCityInfo('Bikaner')">Bikaner</button>
-      <button onclick="showCityInfo('Jaisalmer')">Jaisalmer</button>
+      <button class="light" onclick="showCityInfo('Jaipur')">Jaipur</button>
+      <button class="light" onclick="showCityInfo('Jodhpur')">Jodhpur</button>
+      <button class="light" onclick="showCityInfo('Udaipur')">Udaipur</button>
+      <button class="light" onclick="showCityInfo('Bikaner')">Bikaner</button>
+      <button class="light" onclick="showCityInfo('Jaisalmer')">Jaisalmer</button>
     </div>
 
     <!-- SVG Map Image -->
@@ -307,15 +309,15 @@
     <h2>🧭 Mini Route Recommender</h2>
     <p>What kind of experience are you looking for?</p>
     <div class="route-btn-group">
-      <button class="route-btn" data-theme="heritage" onclick="recommendRoute('heritage', this)">🏰 Heritage &
+      <button class="dark route-btn" data-theme="heritage" onclick="recommendRoute('heritage', this)">🏰 Heritage &
         Forts</button>
-      <button class="route-btn" data-theme="desert" onclick="recommendRoute('desert', this)">🏜️ Desert
+      <button class="dark route-btn"  data-theme="desert" onclick="recommendRoute('desert', this)">🏜️ Desert
         Adventure</button>
-      <button class="route-btn" data-theme="romantic" onclick="recommendRoute('romantic', this)">❤️ Romantic
+      <button class="dark route-btn"  data-theme="romantic" onclick="recommendRoute('romantic', this)">❤️ Romantic
         Escape</button>
-      <button class="route-btn" data-theme="spiritual" onclick="recommendRoute('spiritual', this)">🕉️ Spiritual
+      <button class="dark route-btn"  data-theme="spiritual" onclick="recommendRoute('spiritual', this)">🕉️ Spiritual
         Retreat</button>
-      <button class="route-btn" data-theme="wildlife" onclick="recommendRoute('wildlife', this)">🦌 Nature &
+      <button class="dark route-btn"  data-theme="wildlife" onclick="recommendRoute('wildlife', this)">🦌 Nature &
         Wildlife</button>
     </div>
     <div id="route-result" class="suggestion-card fade-in-on-select"></div>
@@ -346,7 +348,7 @@
           <option value="luxury">Luxury</option>
         </select>
 
-        <button class="cost-btn enhanced-cost-btn" type="submit">💰 Estimate Cost</button>
+        <button class="dark cost-btn enhanced-cost-btn" type="submit">💰 Estimate Cost</button>
       </form>
 
       <div id="cost-result" class="suggestion-card fade-in-on-select"></div>
@@ -362,7 +364,7 @@
         <input type="text" name="name" placeholder="Your Name" required class="contact-input" />
         <input type="email" name="email" placeholder="Your Email" required class="contact-input" />
         <textarea name="message" placeholder="Your Message" rows="5" required class="contact-input"></textarea>
-        <button type="submit" class="contact-btn-enhanced">📨 Send Message</button>
+        <button type="submit"  class="dark ">📨 Send Message</button>
       </form>
     </div>
   </section>
